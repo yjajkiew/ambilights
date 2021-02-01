@@ -1,3 +1,7 @@
+# My changes
+Based on this (post) [https://community.home-assistant.io/t/philips-android-tv-ambilights-light-component/67754/91] my changes are made to adapt this plugin for Philips Ambilight TV based on SAPHI.
+
+
 > ### Update:
 >
 > To support [HACS](https://community.home-assistant.io/t/custom-component-hacs/121727), this repository has been broken up into three

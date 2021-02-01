@@ -18,7 +18,7 @@ DEFAULT_HOST = '127.0.0.1'
 DEFAULT_USER = 'user'
 DEFAULT_PASS = 'pass'
 DEFAULT_NAME = 'TV Ambilights'
-BASE_URL = 'https://{0}:1926/6/{1}' # for older philps tv's, try changing this to 'http://{0}:1925/1/{1}'
+BASE_URL = 'https://{0}:1925/6/{1}' # for older philps tv's, try changing this to 'http://{0}:1925/1/{1}'
 DEFAULT_HUE = 360
 DEFAULT_SATURATION = 0
 DEFAULT_BRIGHTNESS = 255
@@ -79,7 +79,7 @@ class Ambilight(LightEntity):
         self._available = False
         self._effect = None
         self._session = requests.Session()
-        self._session.mount('https://', HTTPAdapter(pool_connections=1))
+        self._session.mount('http://', HTTPAdapter(pool_connections=1))
 
 
     @property
